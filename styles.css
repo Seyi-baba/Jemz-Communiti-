@@ -1,0 +1,316 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #2c2f33;
+  height: 100%;
+  width: 80px; /* Default collapsed width */
+  border-radius: 0 20px 20px 0;
+  transition: width 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-container.expanded {
+  width: 200px; /* Expanded width */
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 24px;
+  margin: 15px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.vertical-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.navbar-item {
+  width: 60px;
+  height: 60px;
+  margin: 15px 0;
+  border: none;
+  background-color: #3c4043;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar-item:hover {
+  background-color: #5c5f63;
+}
+
+.navbar-container.expanded .navbar-item {
+  width: calc(100% - 40px);
+  margin-left: 20px;
+  border-radius: 12px;
+}
+
+.navbar-item i {
+  font-size: 24px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+main {
+  margin-left: 100px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.navbar-container.expanded + main {
+  margin-left: 220px;
+}
+
+/* Responsive Style */
+@media (max-width: 768px) {
+  .navbar-container {
+    height: 60px;
+    width: 100%;
+    transform: translateY(0);
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 0;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger below 768px */
+  }
+
+  .vertical-navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+  }
+
+  .navbar-item {
+    margin: 0;
+    border-radius: 50%;
+  }
+
+  main {
+    margin-left: 0;
+    margin-top: 60px;
+  }
+}
+
+/* Home Container */
+.home-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, purple, blue);
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.home-container h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.home-container p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+/* styles.css */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between; /* Space between the two containers */
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  
+}
+
+.gradient-box, .write-up-box {
+  width: 48%; /* Increase the width for both containers */
+  min-height: 300px; /* Same height for both containers */
+  padding: 30px; /* Add padding inside containers */
+  border-radius: 20px; /* Rounded corners for both */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box; /* Ensure padding doesn’t affect width/height */
+}
+
+.gradient-box {
+  background: linear-gradient(135deg, #6a0dad, #00c9ff); /* Purple to blue gradient */
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease;
+  margin-left: 130px;
+  margin-top: 10px;
+}
+
+.gradient-box h1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.gradient-box p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.gradient-box:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.write-up-box {
+  background-color: white;
+  text-align: left;
+  color: #333;
+ margin-right: 90px;
+ margin-top: 10px;
+}
+
+.write-up-box h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.write-up-box p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Add margin and padding between containers */
+.gradient-box {
+  margin-right: 20px; /* Space between the two boxes */
+  
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column; /* Stack containers vertically on smaller screens */
+  }
+
+  .gradient-box, .write-up-box {
+    width: 95%; /* Adjust width for smaller screens */
+     /*  margin-bottom: 20px; /*Add space between stacked boxes */
+    min-height: 250px; /* Adjust height for smaller screens */
+  }
+
+  /* .gradient-box {
+    margin-right: 0; /* Remove extra margin */
+ 
+}
+
+/* styles.css */
+
+/* Existing styles above */
+
+.bottom-container {
+  /* width:100%; Set width */
+  height: 55%; /* Set height */
+   /* Center container horizontally and add margin at the top */
+  padding: 30px; /* Inner padding */
+  background-color: #ffffff; /* White background */
+  border-radius: 20px; /* Smooth corners */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
+  box-sizing: border-box; /* Include padding in dimensions */
+  text-align: center; /* Center text */
+  color: #333; /* Text color */
+}
+
+.bottom-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #6a0dad; /* Highlighted heading color */
+}
+
+.bottom-container p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .bottom-container {
+    width: 90%; /* Adjust width for smaller screens */
+    height: auto; /* Let the height adjust to content */
+    margin-top: 20px; /* Add spacing above */
+  }
+
+  .bottom-container h3 {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  .bottom-container p {
+    font-size: 0.9rem; /* Adjust font size */
+  }
+}
+
+.total{
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+@media (max-width: 768px){
+   .total{
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+
+  }
+  .gradient-box{
+    width: 90%;
+    
+    margin-top: 60px;
+    margin-right: 20px;
+    
+  }
+  .write-up-box{
+    width: 90%;
+    /* margin: 0 auto; */
+    margin: 0;
+    
+    
+
+  
+} 
+}

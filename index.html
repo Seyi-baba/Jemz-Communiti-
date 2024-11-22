@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jemz Communiti</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="AI.css">
+</head>
+<body>
+  <div class="navbar-container">
+    <!-- Hamburger Button -->
+    <button class="hamburger" onclick="toggleNavbar()">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navbar -->
+     
+    <nav class="vertical-navbar">
+      <button class="navbar-item" >
+        <i class="fas fa-gem"></i>
+      </button>
+      <a href="book.html"><button class="navbar-item" onclick="books()">  </a>
+        <i class="fas fa-book"></i>
+       
+      </button>
+    
+      <button class="navbar-item" onclick="achievements()">
+        <i class="fas fa-trophy"></i>
+      </button>
+     
+    </nav>
+  </div>
+
+ <div class="total">
+  <div class="main-container">
+    <div class="gradient-box">
+      <h1>Welcome to Jemz Communiti</h1>
+      <p>Explore and engage with our features!</p>
+    </div>
+  </div>
+
+  
+    <!-- Second container with write-up -->
+    <div class="write-up-box">
+      <h2>About Us</h2>
+      <p>Jemz Communiti is an online platform where users can access a variety of features such as chat services, achievements tracking, and more. Join our community today to unlock new experiences!</p>
+    </div>
+  </div>
+</div>  
+
+
+   <!-- Third container 
+<div class="bottom-container">
+  <h3>More About Jemz Communiti</h3>
+  <p>This section provides additional details, updates, or resources for users. Stay tuned for more exciting announcements and features.</p>
+</div> -->
+ 
+
+  <!-- AI Assistant Icon -->
+  <div id="ai-icon" class="ai-icon">
+    <img src="image.png" alt="AI Assistant" />
+  </div>
+
+  <!-- Chat Window -->
+  <div id="chat-window" class="chat-window hidden">
+    <div class="chat-header">
+      <h3>Chat with Ziggo</h3>
+      <button id="close-chat" class="close-btn">&times;</button>
+    </div>
+    <div class="chat-body">
+      <div id="chat-messages" class="chat-messages"></div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="user-input" placeholder="Type your message here..." />
+      <button id="send-message" class="send-btn">Send</button>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+  <script src="AI.js"></script>
+</body>
+</html>

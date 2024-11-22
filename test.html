@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Take a Test - Jemz Communiti</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+  <!-- Coin Counter -->
+  <header class="header">
+    <div class="coin-display">
+      <img src="coins (1).png" alt="Coin" class="coin-icon">
+      <span id="coin-count" class="coin-count">0</span>
+    </div>
+    <a href="index.html" class="back-arrow">&#8592; Back to Home</a>
+  </header>
+
+  <!-- Main Test Section -->
+  <main>
+    <section class="test-container">
+      <h1>Take the Test and Earn Coins!</h1>
+      <p>Answer all the questions correctly to earn a coin.</p>
+
+      <!-- Test Form -->
+      <form id="test-form">
+        <div class="question">
+          <h2>1. What is the capital of France?</h2>
+          <label><input type="radio" name="q1" value="Paris"> Paris</label>
+          <label><input type="radio" name="q1" value="London"> London</label>
+          <label><input type="radio" name="q1" value="Berlin"> Berlin</label>
+        </div>
+
+        <div class="question">
+          <h2>2. Who wrote "1984"?</h2>
+          <label><input type="radio" name="q2" value="George Orwell"> George Orwell</label>
+          <label><input type="radio" name="q2" value="Mark Twain"> Mark Twain</label>
+          <label><input type="radio" name="q2" value="J.K. Rowling"> J.K. Rowling</label>
+        </div>
+
+        <button type="button" id="submit-btn">Submit</button>
+      </form>
+
+      <!-- Result Section -->
+      <div id="result-section" class="hidden">
+        <h2>Your Score:</h2>
+        <p id="score"></p>
+        <div id="coin-reward-section" class="hidden">
+          <h2>Congratulations! You earned a coin!</h2>
+          <img src="coins (1).png" alt="Coin" class="coin-icon">
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  
+
+  <script src="test.js"></script>
+</body>
+</html>
