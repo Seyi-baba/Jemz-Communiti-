@@ -1,0 +1,107 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #7b42f6, #3dd2f4);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Back to Home Icon */
+  .back-to-home {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .back-to-home img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .back-to-home img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Coin Section Styling */
+  .coin-section {
+    max-width: 800px;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .coin-header {
+    margin-bottom: 30px;
+  }
+  
+  .coin-balance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .test-store {
+    margin-top: 30px;
+  }
+  
+  .test-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .test-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .buy-btn {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .buy-btn:hover {
+    background-color: #ff4c4c;
+    transform: scale(1.1);
+  }
+  
+  .purchase-message {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: none;
+  }
+  
+  .purchase-message.success {
+    color: #4caf50;
+  }
+  
+  .purchase-message.error {
+    color: #f44336;
+  }
+  

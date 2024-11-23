@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coins - Jemz Communiti</title>
+  <link rel="stylesheet" href="coin.css">
+</head>
+<body>
+  <!-- Back to Home Icon -->
+  <div class="back-to-home">
+    <a href="index.html" title="Back to Home">
+      <img src="https://via.placeholder.com/40x40.png?text=🏠" alt="Home Icon">
+    </a>
+  </div>
+
+  <main class="content">
+    <section class="coin-section">
+      <div class="coin-header">
+        <h1>Coins</h1>
+        <p>Spend your coins to unlock new tests!</p>
+        <div class="coin-balance">
+          <img src="https://via.placeholder.com/30x30.png?text=Coin" alt="Coin Icon">
+          <span id="coin-count">50</span> Coins
+        </div>
+      </div>
+
+      <div class="test-store">
+        <h2>Available Tests</h2>
+        <div class="test-list">
+          <div class="test-item">
+            <h3>Math Test</h3>
+            <p>Cost: 10 Coins</p>
+            <button class="buy-btn" data-cost="10" data-test="Math Test">Buy</button>
+          </div>
+          <div class="test-item">
+            <h3>Science Test</h3>
+            <p>Cost: 15 Coins</p>
+            <button class="buy-btn" data-cost="15" data-test="Science Test">Buy</button>
+          </div>
+          <div class="test-item">
+            <h3>History Test</h3>
+            <p>Cost: 20 Coins</p>
+            <button class="buy-btn" data-cost="20" data-test="History Test">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="purchase-message" class="purchase-message hidden"></div>
+    </section>
+  </main>
+
+  <script src="coin.js"></script>
+</body>
+</html>

@@ -63,8 +63,22 @@ const handleResponse = (message) => {
     response = "Coins are earned by completing tests and getting correct answers!";
   } else if (message.toLowerCase().includes("achievements")) {
     response = "Check your achievements page to see your progress.";
-  } else {
-    response = "I'm here to help! Ask me anything about Jemz Communiti.";
+  } else if (message.toLowerCase().includes("creators")){
+    response = "The creators are Jediah and Jedidiah Emmanuel and the created this communiti as an online platform where one can get information on books"
+  } else if (message.toLowerCase().includes("thanks")){
+    response = "You're always welcome";
+  }else if (message.toLowerCase().includes("thank you")){
+    response = "You're always welcome";
+  }else if (message.toLowerCase().includes("hi")){
+    response = "Hi. I'm Ziggo and I was created by two awesome developers";
+  }else if (message.toLowerCase().includes("wow")){
+    response = "I know right!";
+  }
+
+   else {
+    response = "I'm Ziggo! Ask me anything concerning Jemz Communiti.";
   }
   appendMessage("ai", response);
 };
+
+
