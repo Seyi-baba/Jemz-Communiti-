@@ -227,13 +227,15 @@ body {
   }
 
   .gradient-box, .write-up-box {
-    width: 95%; /* Adjust width for smaller screens */
+    width: 85%; /* Adjust width for smaller screens */
      /*  margin-bottom: 20px; /*Add space between stacked boxes */
     min-height: 250px; /* Adjust height for smaller screens */
+
   }
 
-  /* .gradient-box {
-    margin-right: 0; /* Remove extra margin */
+  .gradient-box{
+    margin: 10%;
+  }
  
 }
 
