@@ -2,8 +2,6 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  display: flex;
-  height: 100vh;
 }
 
 .navbar-container {
@@ -245,22 +243,7 @@ body {
 
 
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .bottom-container {
-    width: 90%; /* Adjust width for smaller screens */
-    height: auto; /* Let the height adjust to content */
-    margin-top: 20px; /* Add spacing above */
-  }
 
-  .bottom-container h3 {
-    font-size: 1.5rem; /* Adjust font size */
-  }
-
-  .bottom-container p {
-    font-size: 0.9rem; /* Adjust font size */
-  }
-}
 
 .total{
   width: 100%;
