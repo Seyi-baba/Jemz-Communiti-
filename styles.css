@@ -243,29 +243,7 @@ body {
 
 /* Existing styles above */
 
-.bottom-container {
-  /* width:100%; Set width */
-  height: 55%; /* Set height */
-   /* Center container horizontally and add margin at the top */
-  padding: 30px; /* Inner padding */
-  background-color: #ffffff; /* White background */
-  border-radius: 20px; /* Smooth corners */
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
-  box-sizing: border-box; /* Include padding in dimensions */
-  text-align: center; /* Center text */
-  color: #333; /* Text color */
-}
 
-.bottom-container h3 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  color: #6a0dad; /* Highlighted heading color */
-}
-
-.bottom-container p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
