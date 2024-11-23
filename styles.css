@@ -139,7 +139,7 @@ main {
     margin: 0 auto;
     margin-top: 20px;
     width: 78%;
-    margin-left: 30px;
+    margin-left: 25px;
   }
 
 }
@@ -169,6 +169,7 @@ body {
   border-radius: 20px; /* Rounded corners for both */
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
   box-sizing: border-box; /* Ensure padding doesn’t affect width/height */
+
 }
 
 .gradient-box {
@@ -214,7 +215,7 @@ body {
 
 /* Add margin and padding between containers */
 .gradient-box {
-  margin-right: 20px; /* Space between the two boxes */
+  margin-right: 10px; /* Space between the two boxes */
   
 }
 
@@ -222,6 +223,7 @@ body {
 @media (max-width: 768px) {
   .main-container {
     flex-direction: column; /* Stack containers vertically on smaller screens */
+    justify-content: center;
   }
 
   .gradient-box, .write-up-box {
@@ -231,9 +233,7 @@ body {
 
   }
 
-  .gradient-box{
-    margin: 10%;
-  }
+ 
  
 }
 
@@ -258,19 +258,19 @@ body {
     flex-direction: column;
     width: 85%;
     margin: 0 auto;
-
+    justify-content: center;
   }
   .gradient-box{
     width: 90%;
-    
+    margin-left: 0;
     margin-top: 60px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     
   }
   .write-up-box{
     width: 90%;
     /* margin: 0 auto; */
-    margin: 0;
+    margin-left: 10px;
     
     
 
