@@ -255,7 +255,7 @@ body {
 }
 
 .middle_container{
-  width: 74%;
+  width: 84%;
   margin-left: 140px;
   height: 320px;
   background-color: plum;
@@ -283,4 +283,8 @@ body {
     padding-bottom: 20px;
     margin-right: 0px;
   }
+}
+
+.end{
+  width: 15px;
 }
